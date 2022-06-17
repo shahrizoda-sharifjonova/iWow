@@ -193,7 +193,7 @@
 }
 
 .header__list.active {
-  top: 76 px;
+  top: 91px;
   opacity: 1;
   visibility: visible;
 }
@@ -711,6 +711,10 @@ ul {
 }
 
 @media (max-width: 575px) {
+  .header__list.active {
+    top: 76px;
+  }
+
   .intro {
     -webkit-box-align: end;
         -ms-flex-align: end;
