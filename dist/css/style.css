@@ -696,6 +696,187 @@
           transform: scale(1.1);
 }
 
+.services {
+  padding-top: 85px;
+  padding-bottom: 105px;
+  background: #F3E2D8;
+  border-top: 1px solid #EFEEEE;
+  border-bottom: 1px solid #EFEEEE;
+}
+
+.services__title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.services__desc {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 48px;
+  color: #383838;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.services__slider {
+  width: 100%;
+  position: relative;
+}
+
+.services .swiper {
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.services .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.services .swiper-pagination {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+
+.services .swiper-pagination-bullet {
+  background: #DB7C6A40;
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+}
+
+.services .swiper-pagination-bullet-active {
+  background: #DB7C6A;
+}
+
+.services__slide {
+  background: #FFFFFF;
+  border-radius: 40px;
+  padding-bottom: 25px;
+}
+
+.services__slide:nth-of-type(2) {
+  -webkit-filter: drop-shadow(0px 4px 10px rgba(114, 8, 8, 0.25));
+          filter: drop-shadow(0px 4px 10px rgba(114, 8, 8, 0.25));
+}
+
+.services__slide:nth-of-type(3) {
+  -webkit-filter: drop-shadow(0px 4px 10px rgba(114, 8, 8, 0.25));
+          filter: drop-shadow(0px 4px 10px rgba(114, 8, 8, 0.25));
+}
+
+.services__img {
+  width: 100%;
+  line-height: 0;
+  margin-bottom: 15px;
+}
+
+.services__img img {
+  width: 100%;
+  line-height: 0;
+  border-radius: 40px 40px 0 0;
+}
+
+.services__subtitle {
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 32px;
+  text-align: center;
+  color: #383838;
+}
+
+.services__p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #909090;
+  max-width: 172px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.services__btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #DB7C6A;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 115px;
+  height: 42px;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.services__btn:hover {
+  background: #df8a7a;
+}
+
+.services__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.services__content .swiper__slide {
+  max-width: 256px;
+  width: 100%;
+}
+
+.services__item {
+  -webkit-transition: 500ms ease;
+  -o-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.services__item:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -953,6 +1134,17 @@ ul {
        -moz-column-gap: 0;
             column-gap: 0;
   }
+
+  .services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .services .swiper-wrapper {
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
 }
 
 @media (max-width: 992px) and (max-width: 575px) {
@@ -1031,6 +1223,21 @@ ul {
   .intro__btn {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .services__desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+
+  .services__slide {
+    width: 100%;
   }
 
   .services {
